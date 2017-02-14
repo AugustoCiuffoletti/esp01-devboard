@@ -1,8 +1,16 @@
 # esp01-devboard
 
+## What is this
+
+This repository contains a Fritzing archive that describes a simple board useful to develop projects using the ESP-01, a tiny board hosting a 8266 CPU, an MCU with an integrated WiFi interface.
+
+The assembly requires some experience with soldering, and the cost of the project is around 20$.
+
+Once you have cloned the repository, open the .fzz file to see the board and understand the description below.
+
 ## What is this for?
 
-If you come from an Arduino experience, the first experiences with the ESP-10 (and other similar WiFi-able MCUs) are frustrating for two main reasons:
+If you come from Arduino, the first experiences with the ESP-10 (and other similar WiFi-able MCUs) are frustrating for two main reasons:
 
 - the switch from **Upload** to **Operate** is not fully automatic;
 - the operation of the board needs a voltage of 3.3V;
@@ -14,25 +22,25 @@ There are a number of guides in the Internet that teach how to flash custom soft
 
 ## Design overview
 
-The board is connected to the PC (hosting a Arduino IDE) with a USB-TTL/USB-STC-ISP adapter that needs to be bought separately (less than 10$ on Internet shops), and hosts a connector for the ESP-01 board. There are also connectors that simplify the utilization of the GPIO pins.
+The development board is connected to the PC (hosting the Arduino IDE used to compile and flash the software) with a **USB-TTL/USB-STC-ISP adapter** that needs to be bought separately (less than 10$ on Internet shops).
+
+The development board has a connector for the ESP-01 board. There are also connectors that simplify the utilization of the data pins of the ESP-01.
 
 An LM317T IC stabilizes an external power source, like a 9V battery or a pack of 3x1.5V batteries.
 
 A jumper helps to change from **Bootload** to **Usage** mode and back with minimal effort.
 
-A button resets the ESP device, which is needed to effect the mode switch.
-
-A set of connectors simplify the connection of the GPIOs with external components.
+A button resets the ESP-01 device: this is needed to effect the mode switch.
 
 The components are soldered on a 5x7cm perfboard: we have 8 connectors, one capacitor, four resistors, one button, one battery, and one integrated circuit LM317T.
 
 Using the given values for the resistors, you will power the ESP-01 with sligtly more than 3.3, namely 3.6. As seen in the data sheet, this should not damage the device, but if you want exactly 3.3 you can modify the circuit adding a variable 500 Ohm resistor trimmer in series to R4.
 
-CAUTION: USB-TTL/USB-STC-ISP adapters may have different pinout: the one I used in the design is:
+CAUTION: USB-TTL/USB-STC-ISP adapters may have different pinout: the one I used in the design is (only bold ones are used):
 
-3.3V - 5V - TXD - RXD - GND
+3.3V - 5V - **TXD - RXD - GND**
 
-You may have to need to change the connection of the J6 connector. The 3.3 is not powerful enough to drive the ESP-01 WiFi interface.
+You may need to change the connection of the J6 connector. The 3.3V in my adapter is not powerful enough to drive the ESP-01 WiFi interface.
 
 ## Operation
 
