@@ -2,7 +2,7 @@
 
 ## What is this
 
-This repository contains a Fritzing archive that describes a simple board useful to develop projects using the ESP-01, a tiny board hosting a 8266 CPU, an MCU with an integrated WiFi interface.
+This repository contains a Fritzing archive that describes a simple board useful to develop projects using the ESP-01, a tiny board hosting an 8266, an MCU with an integrated WiFi network interface.
 
 The assembly requires some experience with soldering, and the cost of the project is around 20$.
 
@@ -18,11 +18,11 @@ If you come from Arduino, the first experiences with the ESP-10 (and other simil
 
 I designed this elementary board to help the hobbist willing to try the ESP-01 device and its builtin WiFi interface. I also assume that you are interested in reprogramming the device, not simply to use the AT style API that is pre-installed in the device.
 
-There are a number of guides in the Internet that teach how to flash custom software in the ESP-01, so I consider that you have already managed to play with a led. But you probably had problems to use the WiFi interface. The name of the problem is *rst cause:4, boot mode:(3,7*). If you understand me, you are ready to proceed...
+There are a number of guides in the Internet that teach how to flash custom software in the ESP-01, so I consider that you have already managed to play with a led. But you probably had problems to use the WiFi interface. The name of the problem is *rst cause:4, boot mode:(3,7)*. If you understand me, you are ready to proceed...
 
 ## Design overview
 
-The development board is connected to the PC (hosting the Arduino IDE used to compile and flash the software) with a **USB-TTL/USB-STC-ISP adapter** that needs to be bought separately (less than 10$ on Internet shops).
+The development board is connected to your PC (hosting the Arduino IDE used to compile and flash the software) with a **USB-TTL/USB-STC-ISP adapter** that needs to be bought separately (less than 10$ on Internet shops).
 
 The development board has a connector for the ESP-01 board. There are also connectors that simplify the utilization of the data pins of the ESP-01.
 
@@ -40,7 +40,7 @@ CAUTION: USB-TTL/USB-STC-ISP adapters may have different pinout: the one I used 
 
 3.3V - 5V - **TXD - RXD - GND**
 
-You may need to change the connection of the J6 connector. The 3.3V in my adapter is not powerful enough to drive the ESP-01 WiFi interface.
+You may need to change the connection of the J6 connector. As a matter of fact the 3.3V in my adapter is not powerful enough to drive the ESP-01 WiFi interface.
 
 ## Operation
 
@@ -50,7 +50,7 @@ Preliminary setup
 2. plug the USB-TTL/USB-STC-ISP adapter into the J6 connector
 3. short the two left pins of the J7 connector with a jumper
 4. push the reset button
-5. plug the adapter into a USB socket in you PC
+5. plug the adapter into a USB socket in your PC
 
 Now you are in **Bootload** mode, ready to upload your sketch: I assume that you know how to do that.
 
