@@ -1,6 +1,8 @@
-# esp01-devboard
+# A DIY development board for the ESP-01
 
-## What is this
+![operation](/home/augusto/Documenti/Elettronica/ESP8266/esp01-devboard/0_small.jpg  "The development board connected to the PC")
+
+## What is this?
 
 This repository contains a Fritzing archive that describes a simple board useful to develop projects using the ESP-01, a tiny board hosting an 8266, an MCU with an integrated WiFi network interface.
 
@@ -18,7 +20,7 @@ If you come from Arduino, the first experiences with the ESP-10 (and other simil
 
 I designed this elementary board to help the hobbist willing to try the ESP-01 device and its builtin WiFi interface. I also assume that you are interested in reprogramming the device, not simply to use the AT style API that is pre-installed in the device.
 
-There are a number of guides in the Internet that teach how to flash custom software in the ESP-01, so I consider that you have already managed to play with a led. But you probably had problems to use the WiFi interface. The name of the problem is *rst cause:4, boot mode:(3,7)*. If you understand me, you are ready to proceed...
+There are a number of guides in the Internet that teach how to flash custom software in the ESP-01, so I consider that you have already managed to play with a led on the GPIO2 pin. But you probably had problems to use the WiFi interface. The name of the problem is *rst cause:4, boot mode:(3,7)*. If you understand me, you are ready to proceed...
 
 ## Design overview
 
@@ -34,7 +36,9 @@ A button resets the ESP-01 device: this is needed to effect the mode switch.
 
 The components are soldered on a 5x7cm perfboard: we have 8 connectors, one capacitor, four resistors, one button, one battery, and one integrated circuit LM317T.
 
-Using the given values for the resistors, you will power the ESP-01 with sligtly more than 3.3, namely 3.6. As seen in the data sheet, this should not damage the device, but if you want exactly 3.3 you can modify the circuit adding a variable 500 Ohm resistor trimmer in series to R4.
+![parts](/home/augusto/Documenti/Elettronica/ESP8266/esp01-devboard/1_small.jpg  "The board with the other parts")
+
+Using the given values for the resistors, you will power the ESP-01 with slightly more than 3.3, namely 3.6. As seen in the data sheet, this should not damage the device, but if you want exactly 3.3 you can modify the circuit adding a variable 500 Ohm resistor trimmer in series to R4.
 
 CAUTION: USB-TTL/USB-STC-ISP adapters may have different pinout: the one I used in the design is (only bold ones are used):
 
@@ -51,6 +55,8 @@ Preliminary setup
 3. short the two left pins of the J7 connector with a jumper
 4. push the reset button
 5. plug the adapter into a USB socket in your PC
+
+![assembled](/home/augusto/Documenti/Elettronica/ESP8266/esp01-devboard/2_small.jpg  "The board after assembling the parts")
 
 Now you are in **Bootload** mode, ready to upload your sketch: I assume that you know how to do that.
 
