@@ -85,3 +85,7 @@ D2 being the most external.
 ###Remind
 
 The ESP-01 has 4 data pins available, but three of them have a role while uploading: one (GPIO0) is used at boot, another two are used for communication during bootloading. Only one is permanently available, GPIO2. If you plan to use also the others for your experiments, keep in mind that your external equipment must not interfere with RX/TX during bootload, and that GPIO0 must be HIGH at boot time, but it can change state afterwards. In short, disconnect external devices connected to D0, D1 and D3 during the upload.
+
+##Testing
+
+Before plugging the ESP-01 in the development board, check that the polarity of the power pins is correct, and that the connections are as expected. You can proceed with the sketch I used for testing: https://github.com/AugustoCiuffoletti/ESP01-TS-DHT11
