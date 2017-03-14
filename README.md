@@ -93,5 +93,5 @@ Before plugging the ESP-01 in the development board, check that the polarity of 
 
 ## The arduino IDE
 
-![assembled](https://github.com/AugustoCiuffoletti/esp01-devboard/blob/master/SetupESP-01.png?dl=0   "The setup on the Arduino IDE")
+![Arduino IDE](https://github.com/AugustoCiuffoletti/esp01-devboard/blob/master/SetupESP-01.png?dl=0   "The setup on the Arduino IDE")
 
