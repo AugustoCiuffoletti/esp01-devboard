@@ -57,7 +57,7 @@ Preliminary setup
 4. push the reset button
 5. plug the adapter into a USB socket in your PC
 
-[assembled](https://www.dropbox.com/s/kop56drzwx4zy0m/2_small.jpg?dl=0   "The board after assembling the parts")
+![assembled](https://www.dropbox.com/s/kop56drzwx4zy0m/2_small.jpg?dl=0   "The board after assembling the parts")
 
 Now you are in **Bootload** mode, ready to upload your sketch: I assume that you know how to do that.
 
