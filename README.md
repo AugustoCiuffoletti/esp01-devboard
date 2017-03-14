@@ -1,6 +1,6 @@
 # A DIY development board for the ESP-01
 
-![operation](http://github.com/AugustoCiuffoletti/esp01-devboard/blob/master/0_small.jpg  "The development board connected to the PC")
+![operation](https://github.com/AugustoCiuffoletti/esp01-devboard/blob/master/0_small.jpg  "The development board connected to the PC")
 
 ## What is this?
 
@@ -36,7 +36,7 @@ A button resets the ESP-01 device: this is needed to effect the mode switch.
 
 The components are soldered on a 5x7cm perfboard: we have 8 connectors, one capacitor, four resistors, one button, one battery, and one integrated circuit LM317T.
 
-![parts](/home/augusto/Documenti/Elettronica/ESP8266/esp01-devboard/1_small.jpg  "The board with the other parts")
+![parts](https://github.com/AugustoCiuffoletti/esp01-devboard/blob/master/1_small.jpg  "The board with the other parts")
 
 Using the given values for the resistors, you will power the ESP-01 with slightly more than 3.3, namely 3.6. As seen in the data sheet, this should not damage the device, but if you want exactly 3.3 you can modify the circuit adding a variable 500 Ohm resistor trimmer in series to R4.
 
@@ -57,7 +57,7 @@ Preliminary setup
 4. push the reset button
 5. plug the adapter into a USB socket in your PC
 
-![assembled](https://www.dropbox.com/s/kop56drzwx4zy0m/2_small.jpg?dl=0   "The board after assembling the parts")
+![assembled](https://github.com/AugustoCiuffoletti/esp01-devboard/blob/master/2_small.jpg?dl=0   "The board after assembling the parts")
 
 Now you are in **Bootload** mode, ready to upload your sketch: I assume that you know how to do that.
 
@@ -90,3 +90,8 @@ The ESP-01 has 4 data pins available, but three of them have a role while upload
 ##Testing
 
 Before plugging the ESP-01 in the development board, check that the polarity of the power pins is correct, and that the connections are as expected. You can proceed with the sketch I used for testing: https://github.com/AugustoCiuffoletti/ESP01-TS-DHT11
+
+##The arduino IDE
+
+![assembled](https://github.com/AugustoCiuffoletti/esp01-devboard/blob/master/SetupESP-01?dl=0   "The setup on the Arduino IDE")
+
