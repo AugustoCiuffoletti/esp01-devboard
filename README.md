@@ -1,6 +1,6 @@
 # A DIY development board for the ESP-01
 
-![operation](/home/augusto/Documenti/Elettronica/ESP8266/esp01-devboard/0_small.jpg  "The development board connected to the PC")
+![operation](http://github.com/AugustoCiuffoletti/esp01-devboard/blob/master/0_small.jpg  "The development board connected to the PC")
 
 ## What is this?
 
