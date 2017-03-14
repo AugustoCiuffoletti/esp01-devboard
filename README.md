@@ -53,10 +53,11 @@ Preliminary setup
 1. plug the ESP-10 MCU in the middle 8-pins connector (J4-J5)
 2. plug the USB-TTL/USB-STC-ISP adapter into the J6 connector
 3. short the two left pins of the J7 connector with a jumper
+4. connect at least 3x1.5V battery (a 9V battery is fine as well)
 4. push the reset button
 5. plug the adapter into a USB socket in your PC
 
-![assembled](/home/augusto/Documenti/Elettronica/ESP8266/esp01-devboard/2_small.jpg  "The board after assembling the parts")
+[assembled](https://www.dropbox.com/s/kop56drzwx4zy0m/2_small.jpg?dl=0   "The board after assembling the parts")
 
 Now you are in **Bootload** mode, ready to upload your sketch: I assume that you know how to do that.
 
